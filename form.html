@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <title>Basic Form Validation</title>
+</head>
+<body>
+<form name="Form" onsubmit="return validateForm()">
+    <h2>Registation Form</h2>
+    <div class="box">
+        <label>Name</label>
+        <input type="text" name="name" id="name" maxlength="30" required>
+        <div class="error" id="nameErr"><div>
+   </div>
+
+   <div class="box">
+    <label>Email Address</label>
+    <input type="email" name="email" id="email" required>
+    <div class="error" id="emailErr"></div>
+</div>
+   <div class="box">
+    <label>Password</label>
+    <input type="password" name="password" id="password" pattern="^[a-zA-Z0-9]{8,}$" required>
+    </div>
+
+  <div class="box">
+    <label>Phone No.</label>
+    <input type="number" name="phone no" id="phone" pattern="[0-9]{10}" required>
+    <div class="error" id="phoneErr"></div>
+ <div>
+
+   <div class="box">
+    <label>Age</label>
+    <input type="number" name="age" id="age" min="18" max="100">
+    </div>
+
+    <div class="box">
+        <label>Gender</label>
+        <div class="form-inline" id="gender">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>  
+ </div>
+   <div class="error" id="genderErr"></div>
+   </div>
+
+
+
+
+ </div>
+    
+</form>
+</body>
+</html>
